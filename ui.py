@@ -2,6 +2,9 @@ import pygame
 
 from upgrade import Upgrade
 
+home_screen = pygame.display.set_mode((350, 675))
+upgrade_screen = pygame.display.set_mode((350, 675))
+
 class UI:
     def __init__(self):
         self.font = pygame.font.SysFont('arial', 15)
