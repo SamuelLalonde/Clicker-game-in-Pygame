@@ -3,10 +3,11 @@ import pygame
 class Button:
    
     # constructor, button has x, y, width and height
-    def __init__(self, x, y, width, height, text=""):
+    def __init__(self, x, y, width, height, text="", img=""):
         self.rect = pygame.Rect(x, y, width, height)
         self.text = text
         self.font = pygame.font.SysFont('arial', 16)
+        self.img = ""
     
     # draw on screen
     def draw(self, screen):
